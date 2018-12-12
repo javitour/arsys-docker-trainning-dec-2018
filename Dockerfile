@@ -12,6 +12,7 @@ RUN echo '<marquee>Hola Holita</marqee>' \
 
 EXPOSE 80
 
-VOLUME ["/arsys-data"]
+COPY ./sayhello.sh /
+RUN chmod o+x ./sayhello.sh
 
-USER perico
+CMD ["./sayhello.sh"]
