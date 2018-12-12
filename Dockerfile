@@ -8,6 +8,7 @@ RUN apt-get install nginx -y
 RUN echo '<marquee>Hola Holita</marqee>' \
     > /var/www/html/index.html
 
-RUN pwd
-
 EXPOSE 80
+
+
+CMD  ["nginx","-g","daemon off;"]
