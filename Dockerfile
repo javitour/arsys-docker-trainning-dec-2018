@@ -10,6 +10,4 @@ RUN echo '<marquee>Hola Holita</marqee>' \
 
 EXPOSE 80
 
-
-ENTRYPOINT  ["nginx","-g","daemon off;"]
-CMD ["-h"]
+WORKDIR /etc 
